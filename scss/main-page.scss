@@ -11,7 +11,7 @@
 
 .hero__title {
   display: inline-flex;
-
+  margin-top: -150px;
   font-family: $accent-font;
   text-transform: uppercase;
   color: $accent-color;
@@ -20,7 +20,7 @@
   cursor: default;
   @media (min-width: $breakpoint-desktop) {
     font-size: 100px;
-    padding-left: 70px;
+    // padding-left: 70px;
   }
   .hero__first-span {
     animation: first-float 8s ease-in-out infinite;
@@ -60,6 +60,7 @@
 .about {
   position: relative;
   overflow-x: clip;
+  overflow-x: clip;
   background: linear-gradient(
     to left,
     $secondary-color 0 20%,
@@ -78,8 +79,13 @@
   .span-bg {
     @media (max-width: 767px) {
       font-size: 400px;
-      top: -150px;
+      top: -150px; // pizda
       left: -330px;
+    }
+    @media (min-width: $breakpoint-tablet) {
+      max-width: calc(100vw - (-330px));
+      //       top: -210px;
+      // left: -330px;
     }
   }
   .second-span-bg {
@@ -88,12 +94,11 @@
     @media (min-width: $breakpoint-tablet) {
       top: 280px;
       left: 110px;
-      // width: 900px;
+      max-width: calc(100vw - 110px);
     }
     @media (min-width: $breakpoint-tablet) {
       top: 380px;
       left: 110px;
-      // width: none;
     }
   }
   .third-span-bg {
@@ -107,13 +112,6 @@
     margin-bottom: 15px;
     position: relative;
     z-index: 1;
-    @media (min-width: $breakpoint-tablet) {
-      margin-bottom: 175px;
-      // padding?
-    }
-    @media (min-width: $breakpoint-desktop) {
-      margin-bottom: 150px;
-    }
   }
   .paragraph {
     margin-bottom: 80px;
@@ -680,16 +678,17 @@
     background-color: $sixth-color;
     filter: brightness(70%);
 
-    width: 510px;
-    height: 671px;
+    width: 230px;
+    height: 271px;
     top: -50px;
-    left: 85px;
-    z-index: -1;
+    left: 145px;
+    z-index: -2;
     @media (min-width: $breakpoint-tablet) {
       top: 30px;
       left: 55px;
       width: 210px;
       height: 340px;
+      z-index: -1;
     }
     @media (min-width: $breakpoint-desktop) {
       top: -20px;
@@ -700,8 +699,8 @@
   }
   .skills__picture {
     position: absolute;
-    filter: brightness(20%);
     display: block;
+    filter: brightness(80%);
     --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
     --m: left var(--_i, 0%) top var(--_g), bottom var(--_i, 0%) left var(--_g),
       top var(--_i, 0%) right var(--_g), right var(--_i, 0%) bottom var(--_g);
@@ -714,8 +713,10 @@
     top: -5%;
     left: 35%;
     z-index: -1;
+    opacity: 50%;
     @media (min-width: $breakpoint-tablet) {
       position: static;
+      opacity: 100%;
       filter: brightness(80%);
       left: 55%;
       top: 5%;
@@ -724,8 +725,6 @@
       z-index: 1;
     }
     @media (min-width: $breakpoint-desktop) {
-      position: static;
-      filter: brightness(80%);
       max-width: 540px;
       height: 730px;
     }

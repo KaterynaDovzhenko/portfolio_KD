@@ -141,11 +141,12 @@ header {
     font-size: $font-size-desktop;
   }
   &::after {
-    width: 80%;
+    width: 60%;
     margin-top: -7px;
     transform-origin: center right;
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: 1280px) {
       margin-top: -10px;
+      width: 80%;
     }
   }
   &:hover:after {
@@ -183,7 +184,7 @@ header {
     text-align: center;
     @media (min-width: $breakpoint-tablet) {
       flex-direction: row;
-      justify-content: space-between;
+      // justify-content: space-between;
     }
     .footer__mobile-container {
       display: flex;
