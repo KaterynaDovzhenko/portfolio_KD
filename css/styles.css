@@ -457,8 +457,9 @@ body {
   max-height: 180vh;
 }
 .gallery .text-block__title {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 16px;
+  font-family: "Rufina", sans-serif;
 }
 @media (min-width: 768px) {
   .gallery .text-block__title {

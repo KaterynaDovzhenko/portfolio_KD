@@ -366,8 +366,9 @@
     max-height: 180vh;
   }
   .text-block__title {
-    font-size: 20px;
+    font-size: $font-size-desktop;
     margin-bottom: 16px;
+    font-family: $accent-font;
     @media (min-width: $breakpoint-tablet) {
       font-size: 40px;
       margin-bottom: 40px;
@@ -487,10 +488,6 @@
     margin-bottom: 80px;
   }
 }
-
-// .ideas .paragraph {
-//   margin-bottom: 70px;
-// }
 
 .main__btn-cotainer-ideas {
   gap: 0;
