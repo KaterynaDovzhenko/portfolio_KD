@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kateryna Dovzhenko</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <!-- <script src="libs/gsap/gsap.min.js" defer></script>
+	  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	  <script src="libs/gsap/ScrollSmoother.min.js" defer></script> -->
+
+    <!-- <script src="js/promo.js" defer></script> -->
+  </head>
+  <body>
+    <!-- <a href="#header" class="to-top" >
+      <svg class="scroll__svg"
+        xmLns="http://www.w3.org/2000/svg"
+        xml:Lang="en"
+        xmlns:xLink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 500 500"
+      >
+        <defs>
+          <path
+            id="textcircle"
+            d="M250, 400 
+            a150,150 0 0, 1 0, -300a150, 150 0 0,1 0,300Z"
+            transform="rotate (12,250,250)"
+          />
+        </defs>
+        <g class="textcircle">
+          <text class="scroll__text" textlength="940">
+            <textpath
+              xlink:href="#textcircle"
+              aria-Label="Scroll up"
+              textlength="940"
+            >
+              scroll up | scroll up | scroll up |
+            </textpath>
+          </text>
+        </g>
+      </svg>
+    </a> -->
+
+    <!-- <div class="wrapper" style="inset: 0px; width: 100%; height: 100%; position: fixed; overflow: hidden;">
+    <div class="content" style="width: 100%; overflow: visible; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -6536, 0, 1);"> -->
+    <header id="header">
+      <div class="container">
+        <div class="main-nav">
+          <button
+            type="button"
+            class="strikethrough btn-menu js-open-menu"
+            aria-expanded="false"
+          >
+            menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero" id="home">
+        <div class="hero__container">
+          <h1 data-lag=".5" class="hero__title">
+            <span class="hero__first-span">Kateryna</span>
+            <span class="hero__second-span">Dovzhenko</span>
+          </h1>
+        </div>
+
+        <!-- <canvas id="c"></canvas> -->
+      </section>
+      <section class="about section" id="about">
+        <div class="container">
+          <span data-speed=".9" class="span-bg">hello</span>
+          <span data-speed="1.1" class="span-bg second-span-bg">hello</span>
+          <span data-speed="1.2" class="span-bg third-span-bg">hello</span>
+          <h2 class="section-title">Who am I</h2>
+          <p class="paragraph">what I do</p>
+          <div class="about__card" tabindex="0">
+            <svg class="about__svg">
+              <use href="./icons.svg#about-icon"></use>
+              >
+            </svg>
+            <div class="textBox">
+              <p class="about__text-card">
+                Hello, I'm Kate, a passionate and results-driven Web and Design
+                Developer with a keen eye for crafting captivating digital
+                experiences.
+              </p>
+              <ul class="about__textBox-list">
+                <li>
+                  <span>2+</span>
+                  <p>years in UI & UX Design</p>
+                </li>
+                <li>
+                  <span>3</span>
+                  <p>years of Bachelor in PMI and Marketing</p>
+                </li>
+                <li>
+                  <span>9+</span>
+                  <p>months in Frontend Development</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works section" id="portfolio">
+        <div class="container works__container">
+          <h2 data-speed=".8" class="section-title">Works</h2>
+          <div class="gallery">
+            <div data-speed=".9" class="gallery__left">
+              <a class="gallery__item masfor__after" href="./masfor.html">
+                <picture>
+                  <source
+                    srcset="./img/masfor.webp 1x, ./img/masfor@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/masfor.jpg 1x, ./img/masfor@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="works__img"
+                    src="./img/masfor.jpg"
+                    alt="ptototype of website for sneakers store"
+                  />
+                </picture>
+              </a>
+              <div class="text-block left gallery__item">
+                <h3 class="text-block__title">CrStudio</h3>
+                <p>
+                  It was enjoyable to create this platform for creative courses
+                  since it allowed me to combine my love of design with the
+                  chance to support the development of artistic ability. The
+                  project served as an example of how intelligent user
+                  experience design can enhance a learning platform and support
+                  a vibrant online artistic community.
+                </p>
+              </div>
+              <a class="gallery__item app__after" href="./coming-soon.html">
+                <picture>
+                  <source
+                    srcset="./img/cozycasa.webp 1x, ./img/cozycasa@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/cozycasa.jpg 1x, ./img/cozycasa@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="works__img"
+                    src="./img/cozycasa.jpg"
+                    alt="ptototype of website for sneakers store"
+                  />
+                </picture>
+              </a>
+              <div class="text-block left gallery__item">
+                <h3 class="text-block__title">RoadTime</h3>
+                <p>
+                  My love of design and the thrill of the automobile industry
+                  came together in the exciting process of creating this
+                  website. The project served as an example of the value of
+                  creating a welcoming community and taking into account users'
+                  preferences, finally producing a website that embraced the
+                  excitement of automobiles and united enthusiasts around a
+                  common interest.
+                </p>
+              </div>
+            </div>
+            <div data-speed="1.1" class="gallery__right">
+              <div class="text-block gallery__item">
+                <h3 class="text-block__title">Masfor</h3>
+                <p>
+                  The process of creating the website for this shoe business was
+                  quite fulfilling; it included fusing creativity and usability
+                  to produce a powerful digital platform for sneaker fans. The
+                  project served as an example of how careful user-centric
+                  design can enhance a brand's online visibility and support the
+                  expansion of its business.
+                </p>
+              </div>
+              <a
+                class="gallery__item crstudio__after"
+                href="./coming-soon.html"
+              >
+                <picture>
+                  <source
+                    srcset="./img/crstudio.webp 1x, ./img/crstudio@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/crstudio.jpg 1x, ./img/crstudio@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="works__img"
+                    src="./img/crstudio.jpg"
+                    alt="ptototype of website for sneakers store"
+                  />
+                </picture>
+              </a>
+              <div class="text-block gallery__item">
+                <h3 class="text-block__title">CozyCasa</h3>
+                <p>
+                  Step into a world of sophistication and style with our recent
+                  project - a complete website design for CozyCasa. Mission was
+                  clear: elevate the online shopping experience for furniture
+                  enthusiasts. A beautifully responsive website that beckons
+                  visitors to explore, discover, and make their dream furniture
+                  purchases with confidence. Take a look for an in-depth look at
+                  how it was transformed CozyCasa's digital presence.
+                </p>
+              </div>
+              <a
+                class="gallery__item roadtime__after"
+                href="./coming-soon.html"
+              >
+                <picture>
+                  <source
+                    srcset="./img/roadtime.webp 1x, ./img/roadtime@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/roadtime.jpg 1x, ./img/roadtime@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="works__img"
+                    src="./img/roadtime.jpg"
+                    alt="ptototype of website for sneakers store"
+                  />
+                </picture>
+              </a>
+            </div>
+          </div>
+          <a class="works__btn" href="./portfolio.html"
+            ><span class="works__btn-span">se</span>
+            <span class="works__btn-span-motion">e</span> more works</a
+          >
+          <span class="works__span-bg span-bg">portfolio</span>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title ideas__section-title">
+            Do you have any ideas?
+          </h2>
+          <p class="paragraph ideas__paragraph">let's do it together!</p>
+          <div data-speed="1.1" class="main__btn-cotainer-ideas" href="#">
+            <a target="_blank" href="https://t.me/katiedov" class="card">
+              <svg class="social-media-svg telega">
+                <use href="./icons.svg#telega-icon"></use>
+                >
+              </svg>
+            </a>
+            <a
+              target="_blank"
+              href="https://linktr.ee/katedov?utm_source=linktree_profile_share&ltsid=e199aaf0-2625-4949-b76d-6671b83e06ec"
+              class="card"
+            >
+              <svg class="social-media-svg linktree">
+                <use href="./icons.svg#linktree-icon"></use>
+                >
+              </svg>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/kateryna-dovzhenko-123179205/"
+              class="card"
+            >
+              <svg class="social-media-svg linkedin">
+                <use href="./icons.svg#linkedin-icon"></use>
+                >
+              </svg>
+            </a>
+
+            <p class="ideas__text-btn">contact me</p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="skills__container">
+            <div class="skills__left-container">
+              <h2 class="section-title skills__title">My story...</h2>
+              <div>
+                <input type="checkbox" class="read-more-state" id="post-2" />
+                <label for="post-2" class="read-more-trigger"></label>
+                <ul class="read-more-wrap skills__list">
+                  <li>
+                    I always was curious about technologies and different
+                    industries which exist nowadays. I tried a lot of things to
+                    figure out what is my dream job. So, I am here now.
+                  </li>
+                  <li>
+                    I thrive as a professional web developer in turning
+                    complicated concepts into elegant code. I've become
+                    proficient in many technologies over the years, ranging from
+                    HTML and CSS to JavaScript and beyond.
+                  </li>
+                  <li class="read-more-target">
+                    My ability to combine my technical expertise with efficient
+                    project management makes me unique. I am excellent at
+                    leading cross-functional teams to accomplish common
+                    objectives because I am a natural leader and communicator.
+                  </li>
+                  <li class="read-more-target">
+                    I'm willing to work with you whether you're looking for a
+                    web developer who can make your ideas come to life, a UI/UX
+                    designer who can bring life to interfaces, or a project
+                    manager who can plan for success. Let's design engaging
+                    digital experiences that challenge conventions and boost
+                    your vision. I appreciate you looking at my portfolio. I
+                    urge you to look over my work and get in touch with me so we
+                    can talk about how we can make your upcoming project a
+                    reality.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skills__picture-container">
+              <picture>
+                <source
+                  srcset="./img/me.webp 1x, ./img/me@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/me.jpg 1x, ./img/me@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  data-speed=".9"
+                  class="skills__picture"
+                  src="./img/me.jpg"
+                  alt="Kateryna Dovzhenko"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__mobile-container">
+          <div class="footer__left-container">
+          <h3>Kateryna Dovzhenko</h3>
+          <p class="paragraph">©2023 All Rights Reserved</p>
+        </div>
+        <div class="footer__middle-container">
+          <ul class="footer__nav-list">
+            <li>
+              <a class="paragraph" href="#about">about me</a>
+            </li>
+            <li>
+              <a class="paragraph" href="#portfolio">works</a>
+            </li>
+            <li>
+              <a class="paragraph" href="#skills">skills</a>
+            </li>
+          </ul>
+          <a class="tel-hover paragraph" href="tel:+17869224547"
+            >+1 786 922 4547</a
+          >
+        </div>
+        </div>
+
+        <div class="footer__right-container">
+          <p>keep in touch</p>
+          <ul class="social-media-list">
+            <li>
+              <a target="_blank" class="social-media-btn" href=""
+                ><svg class="social-media-svg">
+                  <use href="./icons.svg#telega-icon"></use>
+                  >
+                </svg>
+                <span class="icon-bg"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="social-media-btn"
+                href="https://linktr.ee/katedov?utm_source=linktree_profile_share&ltsid=e199aaf0-2625-4949-b76d-6671b83e06ec"
+                ><svg class="social-media-svg">
+                  <use href="./icons.svg#linktree-icon"></use>
+                  >
+                </svg>
+                <span class="icon-bg"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="social-media-btn"
+                href="https://www.linkedin.com/in/kateryna-dovzhenko-123179205/"
+                ><svg class="social-media-svg">
+                  <use href="./icons.svg#linkedin-icon"></use>
+                  >
+                </svg>
+                <span class="icon-bg"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="modal" class="modal__menu js-menu-container">
+      <div class="container">
+       <div class="top-container">
+         <div class="top-left-container">
+          <span>kateryna dovzhenko</span>
+          <a class="contact" href="tel:+17869224547">+17869224547</a>
+        </div>
+    
+        <button class="strikethrough btn-menu js-close-menu">
+            menu
+          </button>
+       </div>
+       
+        <nav class="list-nav">
+          <ul>
+          <li class="item" >
+            <a class="strikethrough js-nav-link"  href="#home">home</a>
+          </li>
+          <li class="item" >
+            <a class="strikethrough js-nav-link"  href="#about">about</a>
+          </li>
+          <li class="item" ><a class="strikethrough js-nav-link"  href="#portfolio">works</a></li>
+          <li class="item" ><a class="strikethrough js-nav-link"  href="#skills">skills</a></li>
+        </ul>
+        </nav>
+        <ul class="modal__social-list">
+          <li><a target="_blank" href="https://linktr.ee/katedov?utm_source=linktree_profile_share&ltsid=e199aaf0-2625-4949-b76d-6671b83e06ec">linktree</a></li>
+          <li><a target="_blank" href="https://t.me/katiedov">telegram</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/kateryna-dovzhenko-123179205/">linkedin</a></li>
+        </ul>
+      </nav>
+
+      </div>
+    
+
+      </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/coming-soon.js"></script>
+    <!-- <script src="./js/more.js"></script>
+    <script src="./js/promo.js"></script> -->
+    <!-- <script src="./js/overflow.js"></script> -->
+    <!-- <script src="./js/arrow.js"></script>
+    <script src="./js/nav.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <!-- <script>
+    $(document).ready(function () {
+      $("a[href*=#]").on("click", function (e) {
+        var anchor = $(this);
+        $("html, body")
+          .stop()
+          .animate(
+            {
+              scrollTop: $(anchor.attr("href")).offset().top,
+            },
+            1100
+          );
+        e.preventDefault();
+        return false;
+      });
+    });
+  </script> -->
+    <!-- <script>
+    alert("Please, make sure that you opened this website on computer. Adaptive version for each screen is still in the process. Thank you in advance :)");
+  </script> -->
+    <!-- </div>
+</div> -->
+  </body>
+</html>

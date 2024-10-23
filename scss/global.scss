@@ -1,0 +1,57 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: $secondary-color;
+  font-size: $font-size-desktop;
+  font-weight: 400;
+
+  overflow-x: hidden;
+
+  // overflow-y: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden !important; /* Use !important to override any potential conflicts */
+  position: fixed; /* Prevents the body from moving */
+  width: 100%; /* Ensure no horizontal scroll */
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: $bg-color;
+  color: $secondary-color;
+  font-family: $main-font;
+  margin: 0;
+}
+
+.section {
+  @include section;
+}
+
+.container {
+  @include container;
+  .main-nav {
+    padding-top: 40px;
+  }
+}
+
+.section-title {
+  @include section-title-desktop;
+}
+
+.paragraph {
+  @include paragraph-mobile;
+}

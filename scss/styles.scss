@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Rufina&display=swap");
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "main-page.scss";
+@import "coming-soon.scss";
+
+.content,
+.hero,
+header,
+.gallery__left,
+.gallery__right {
+  will-change: transform;
+}
+///////////// MODAL WINDOW
+
+.modal__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $bg-color;
+  transform: translateX(100%);
+  transition: transform 1.5s;
+  z-index: 1;
+  &.is-open {
+    transform: translateX(0);
+    .btn-menu.strikethrough:after {
+      margin-top: -10px;
+      transform: scaleX(1);
+      transform-origin: center left;
+    }
+    .btn-menu.strikethrough:hover:after {
+      transform: scaleX(0);
+      transform-origin: center right;
+    }
+  }
+  .container {
+    padding: 20px;
+    @media (min-width: $breakpoint-tablet) {
+      padding: 40px 0;
+    }
+    .top-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+      .top-left-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-transform: uppercase;
+        @include main-font;
+        span {
+          color: $accent-color;
+          font-family: $accent-font;
+          font-size: $font-size-desktop;
+          @media (max-width: 575px) {
+            max-width: 130px;
+          }
+        }
+        a {
+          color: $accent-color;
+          font-size: 15px;
+          transition: $transition-color;
+          font-family: $accent-font;
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+    .list-nav {
+      margin: 60px auto 90px;
+      text-align: center;
+      .strikethrough {
+        display: inline-block;
+        position: relative;
+        transition: all 0.95s cubic-bezier(0.55, 0, 0.1, 1);
+        @include main-font;
+        text-transform: uppercase;
+        font-size: 70px;
+        font-family: $accent-font;
+        color: $accent-color;
+        cursor: pointer;
+        @media (min-width: $breakpoint-tablet) {
+          font-size: 100px;
+        }
+      }
+    }
+  }
+}
+
+///////////// HEADER
+
+header {
+  .container {
+    padding: 0;
+  }
+}
+
+.strikethrough {
+  display: inline-block;
+  position: relative;
+  transition: all 0.95s cubic-bezier(0.55, 0, 0.1, 1);
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: -43px;
+    background: $accent-color;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.95s cubic-bezier(0.55, 0, 0.1, 1);
+    @media (min-width: $breakpoint-tablet) {
+      margin-top: -50px;
+    }
+  }
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: center left;
+  }
+}
+
+.btn-menu {
+  display: block;
+  margin-left: auto;
+  color: $accent-color;
+  @include main-font;
+  font-family: $accent-font;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size-tablet;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    font-size: $font-size-desktop;
+  }
+  &::after {
+    width: 80%;
+    margin-top: -7px;
+    transform-origin: center right;
+    @media (min-width: $breakpoint-tablet) {
+      margin-top: -10px;
+    }
+  }
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: center left;
+  }
+}
+
+.modal__social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-family: $accent-font;
+  font-size: 15px;
+  text-transform: uppercase;
+  a {
+    color: $accent-color;
+    transition: $transition-color;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+////////// FOOTER
+
+.footer {
+  padding-bottom: 60px;
+  color: $footer-color;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    text-align: center;
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer__mobile-container {
+      display: flex;
+    }
+  }
+}
+
+.footer__middle-container {
+  width: 240px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  //   &:after {
+  //     content: "";
+  //     position: absolute;
+  //     left: 431px;
+  //     background-color: $footer-color;
+  //     width: 1px;
+  //     height: 78px;
+  //   }
+
+  .footer__nav-list {
+    display: flex;
+    gap: 10px;
+    @media (min-width: $breakpoint-tablet) {
+      gap: 45px;
+    }
+    li {
+      white-space: nowrap;
+    }
+    a {
+      font-size: $font-size-mobile;
+      color: $footer-color;
+      transition: $transition-color;
+      &:hover {
+        color: $accent-color;
+      }
+      @media (min-width: $breakpoint-tablet) {
+        font-size: $font-size-tablet;
+      }
+      @media (min-width: $breakpoint-desktop) {
+        font-size: $font-size-desktop;
+      }
+    }
+  }
+  .tel-hover {
+    font-size: $font-size-mobile;
+    color: $footer-color;
+    transition: $transition-color;
+    &:hover {
+      color: $accent-color;
+    }
+    @media (min-width: $breakpoint-tablet) {
+      font-size: $font-size-tablet;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      font-size: $font-size-desktop;
+    }
+  }
+}
+
+.footer__left-container {
+  width: 240px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: start;
+  //   &:after {
+  //     content: "";
+  //     position: absolute;
+  //     /* left: 277px; */
+  //     left: 327px;
+  //     background-color: $footer-color;
+  //     width: 1px;
+  //     height: 78px;
+  //   }
+  .paragraph {
+    color: $footer-color;
+    font-size: 10px;
+    margin: 0;
+    font-family: $accent-font;
+  }
+  h3 {
+    font-family: $accent-font;
+    font-size: 24px;
+    color: $footer-color;
+    margin: 0;
+    font-weight: 400;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 15px;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 30px;
+    }
+  }
+}
+
+.footer__right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @media (min-width: $breakpoint-tablet) {
+    width: 240px;
+    justify-content: center;
+  }
+  p {
+    text-align: center;
+    font-size: $font-size-mobile;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: $font-size-tablet;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      font-size: $font-size-desktop;
+    }
+  }
+  .social-media-list {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    svg {
+      fill: $footer-color;
+      transition: fill $transition-move;
+      &:hover {
+        fill: $accent-color;
+      }
+    }
+  }
+}

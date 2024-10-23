@@ -1,0 +1,27 @@
+$bg-color: #121212;
+$accent-color: #5984f0;
+$secondary-color: #bec5d4;
+$third-color: #8896c0;
+$forth-color: #1a1d23;
+$sixth-color: #495168;
+$hover-color: #bdc5d693;
+$dark-color: #131924;
+$footer-color: #bdc5d693;
+$hover-colors: #51a1de, #78e371, #3478b4;
+$transition-color: color 0.75s ease-out;
+
+$accent-font: "Rufina", sans-serif;
+$main-font: "Lato", sans-serif;
+$font-size-mobile: 14px;
+$font-size-tablet: 16px;
+$font-size-desktop: 18px;
+$section-title-size: 40px;
+
+// $cubic-bezier: cubic-bezier(0, 0, 1, 1);
+$breakpoint-desktop: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 320px;
+
+$transition-move: 0.75s ease-in-out;
+$index: calc(1vw + 1vh);
+$gallery-gap: calc($index * 10);
