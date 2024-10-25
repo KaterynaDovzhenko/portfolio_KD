@@ -1,5 +1,7 @@
 ///////////// HERO
-
+.hero {
+  height: 850px;
+}
 .hero__container {
   display: flex;
   justify-content: center;
@@ -56,9 +58,11 @@
 
 ///////// ABOUT
 
+.about.section {
+  // padding-top: 350px;
+}
 .about {
   position: relative;
-  overflow-x: clip;
   overflow-x: clip;
   background: linear-gradient(
     to left,
@@ -220,18 +224,24 @@
 
 .works {
   padding-top: 210px;
-  .container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+
   .works__container {
     position: relative;
     overflow: hidden;
-    padding-bottom: 10px;
-    padding-top: 110px;
+    padding: 20px 40px 10px 40px;
     max-width: none;
+    @media (min-width: $breakpoint-tablet) {
+      padding: 200px 40px 10px 40px;
+    }
     .section-title {
-      margin-bottom: 180px;
+      margin-bottom: 150px;
+      @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 250px;
+      }
+
+      @media (min-width: $breakpoint-desktop) {
+        margin-bottom: 300px;
+      }
     }
     .works__btn {
       color: $secondary-color;

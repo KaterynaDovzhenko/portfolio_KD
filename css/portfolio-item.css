@@ -72,6 +72,10 @@ body {
   text-align: center;
 }
 
+.hero {
+  height: 850px;
+}
+
 .hero__container {
   display: flex;
   justify-content: center;
@@ -133,7 +137,6 @@ body {
 }
 .about {
   position: relative;
-  overflow-x: clip;
   overflow-x: clip;
   background: linear-gradient(to left, #bec5d4 0 20%, #131924 0 80%);
 }
@@ -302,19 +305,29 @@ body {
 .works {
   padding-top: 210px;
 }
-.works .container {
-  padding-left: 40px;
-  padding-right: 40px;
-}
 .works .works__container {
   position: relative;
   overflow: hidden;
-  padding-bottom: 10px;
-  padding-top: 110px;
+  padding: 20px 40px 10px 40px;
   max-width: none;
 }
+@media (min-width: 768px) {
+  .works .works__container {
+    padding: 200px 40px 10px 40px;
+  }
+}
 .works .works__container .section-title {
-  margin-bottom: 180px;
+  margin-bottom: 150px;
+}
+@media (min-width: 768px) {
+  .works .works__container .section-title {
+    margin-bottom: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .works .works__container .section-title {
+    margin-bottom: 300px;
+  }
 }
 .works .works__container .works__btn {
   color: #bec5d4;
@@ -1490,6 +1503,9 @@ body .footer {
   position: relative;
   margin-top: 170px;
 }
+.demonstration .container .btn__works::before {
+  left: 45%;
+}
 
 .btn__works {
   color: #bec5d4;
@@ -1536,17 +1552,7 @@ body .footer {
 }
 
 .portfolio__mockup {
-  max-width: 350px;
-}
-@media (min-width: 768px) {
-  .portfolio__mockup {
-    max-width: 700px;
-  }
-}
-@media (min-width: 1024px) {
-  .portfolio__mockup {
-    max-width: 900px;
-  }
+  max-width: 100%;
 }
 
 .masfor__sneaker {
@@ -1619,15 +1625,34 @@ body .footer {
 }
 
 .cozycasa__prototype-part1 {
-  position: relative;
+  margin-left: auto;
 }
 .cozycasa__prototype-part1 .cozycasa__mobile-mockup {
   position: absolute;
+  top: 7%;
+  left: 3%;
+}
+@media (min-width: 768px) {
+  .cozycasa__prototype-part1 .cozycasa__mobile-mockup {
+    left: 6%;
+  }
 }
 @media (min-width: 1280px) {
   .cozycasa__prototype-part1 .cozycasa__mobile-mockup {
-    top: 30%;
-    left: -10%;
+    left: 3%;
+  }
+}
+.cozycasa__prototype-part1 .cozycasa__mobile-mockup .cozycasa__mobile-mockup-img {
+  max-width: 120px;
+}
+@media (min-width: 768px) {
+  .cozycasa__prototype-part1 .cozycasa__mobile-mockup .cozycasa__mobile-mockup-img {
+    max-width: 550px;
+  }
+}
+@media (min-width: 1280px) {
+  .cozycasa__prototype-part1 .cozycasa__mobile-mockup .cozycasa__mobile-mockup-img {
+    max-width: none;
   }
 }
 
@@ -1637,11 +1662,32 @@ body .footer {
 }
 .cozycasa__prototype-part2 .cozycasa__error-mockup {
   position: absolute;
+  top: 45%;
+  left: 40%;
+}
+@media (min-width: 768px) {
+  .cozycasa__prototype-part2 .cozycasa__error-mockup {
+    top: 45%;
+    left: 45%;
+  }
 }
 @media (min-width: 1280px) {
   .cozycasa__prototype-part2 .cozycasa__error-mockup {
-    top: 35%;
+    top: 40%;
     left: 40%;
+  }
+}
+.cozycasa__prototype-part2 .cozycasa__error-mockup-img {
+  max-width: 250px;
+}
+@media (min-width: 768px) {
+  .cozycasa__prototype-part2 .cozycasa__error-mockup-img {
+    max-width: 550px;
+  }
+}
+@media (min-width: 1280px) {
+  .cozycasa__prototype-part2 .cozycasa__error-mockup-img {
+    max-width: none;
   }
 }
 
