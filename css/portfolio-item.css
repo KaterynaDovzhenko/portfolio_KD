@@ -1307,6 +1307,16 @@ header .container {
   fill: #5984f0;
 }
 
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  will-change: transform;
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
   .modal__menu .container {
     padding: 40px;
@@ -1453,6 +1463,28 @@ body .footer {
     height: 100px;
   }
 }
+.colors .colors-item div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: 0.75s ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .colors .colors-item div {
+    font-size: 16px;
+  }
+}
+.colors .colors-item div p {
+  color: #1a1d23;
+}
 
 .demonstration .container {
   position: relative;
@@ -1503,6 +1535,20 @@ body .footer {
   transition: all 1.3s ease;
 }
 
+.portfolio__mockup {
+  max-width: 350px;
+}
+@media (min-width: 768px) {
+  .portfolio__mockup {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio__mockup {
+    max-width: 900px;
+  }
+}
+
 .masfor__sneaker {
   position: absolute;
   top: 20%;
@@ -1550,42 +1596,6 @@ body .footer {
 .colors__masfor li:last-child {
   background-color: #a77545;
 }
-.colors__masfor li div {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 14px;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-  transition: 0.75s ease-in-out;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media (min-width: 768px) {
-  .colors__masfor li div {
-    font-size: 16px;
-  }
-}
-.colors__masfor li div p {
-  color: #1a1d23;
-}
-
-.masfor__mockup {
-  max-width: 350px;
-}
-@media (min-width: 768px) {
-  .masfor__mockup {
-    max-width: 700px;
-  }
-}
-@media (min-width: 1024px) {
-  .masfor__mockup {
-    max-width: 900px;
-  }
-}
 
 .mockup-iph__masfor {
   position: absolute;
@@ -1606,6 +1616,53 @@ body .footer {
     left: 870px;
     max-width: 445px;
   }
+}
+
+.cozycasa__prototype-part1 {
+  position: relative;
+}
+.cozycasa__prototype-part1 .cozycasa__mobile-mockup {
+  position: absolute;
+}
+@media (min-width: 1280px) {
+  .cozycasa__prototype-part1 .cozycasa__mobile-mockup {
+    top: 30%;
+    left: -10%;
+  }
+}
+
+.cozycasa__prototype-part2 {
+  position: relative;
+  margin-top: -7px;
+}
+.cozycasa__prototype-part2 .cozycasa__error-mockup {
+  position: absolute;
+}
+@media (min-width: 1280px) {
+  .cozycasa__prototype-part2 .cozycasa__error-mockup {
+    top: 35%;
+    left: 40%;
+  }
+}
+
+.portfolio__cozycasa-img-mockup {
+  margin-top: -7px;
+}
+
+.colors__cozycasa li:first-child {
+  background-color: #f0f0f0;
+}
+.colors__cozycasa li:nth-child(2) {
+  background-color: #c3c4c8;
+}
+.colors__cozycasa li:nth-child(3) {
+  background-color: #6d6e71;
+}
+.colors__cozycasa li:nth-child(4) {
+  background-color: #accd07;
+}
+.colors__cozycasa li:last-child {
+  background-color: #7d9c04;
 }
 
 /*# sourceMappingURL=portfolio-item.css.map */

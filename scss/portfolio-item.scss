@@ -2,6 +2,16 @@
 @import "./mixins.scss";
 @import "./styles.scss";
 
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  will-change: transform;
+}
+
 .modal__menu .container {
   @media (min-width: $breakpoint-tablet) and (max-width: 1280px) {
     padding: 40px;
@@ -125,6 +135,26 @@ body {
       width: 100px;
       height: 100px;
     }
+    div {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateY(100%);
+      transition: $transition-move;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @media (min-width: $breakpoint-tablet) {
+        font-size: $font-size-tablet;
+      }
+      p {
+        color: $forth-color;
+      }
+    }
   }
 }
 
@@ -182,6 +212,16 @@ body {
   }
 }
 
+.portfolio__mockup {
+  max-width: 350px;
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 700px;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 900px;
+  }
+}
+
 ///////////////      MASFOR      /////////////
 
 .masfor__sneaker {
@@ -225,36 +265,6 @@ body {
     &:last-child {
       background-color: #a77545;
     }
-    div {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-size: 14px;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      transform: translateY(100%);
-      transition: $transition-move;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      @media (min-width: $breakpoint-tablet) {
-        font-size: $font-size-tablet;
-      }
-      p {
-        color: $forth-color;
-      }
-    }
-  }
-}
-
-.masfor__mockup {
-  max-width: 350px;
-  @media (min-width: $breakpoint-tablet) {
-    max-width: 700px;
-  }
-  @media (min-width: $breakpoint-desktop) {
-    max-width: 900px;
   }
 }
 
@@ -276,3 +286,63 @@ body {
 }
 
 ///////////////      COZYCASA      /////////////
+
+.cozycasa__prototype-part1 {
+  position: relative;
+  .cozycasa__mobile-mockup {
+    position: absolute;
+    // top: -20%;
+    // left: 1%;
+
+    // @media (min-width: $breakpoint-tablet) {
+    //   top: 25%;
+    //   left: 45%;
+    // }
+    @media (min-width: 1280px) {
+      top: 30%;
+      left: -10%;
+    }
+  }
+}
+
+.cozycasa__prototype-part2 {
+  position: relative;
+  margin-top: -7px;
+  .cozycasa__error-mockup {
+    position: absolute;
+    // top: 20%;
+    // left: 35%;
+    // @media (min-width: $breakpoint-tablet) {
+    //   top: 25%;
+    //   left: 45%;
+    // }
+    @media (min-width: 1280px) {
+      top: 35%;
+      left: 40%;
+    }
+  }
+}
+
+.portfolio__cozycasa-img-mockup {
+  margin-top: -7px;
+}
+
+.colors__cozycasa {
+  li {
+    &:first-child {
+      background-color: #f0f0f0;
+    }
+    &:nth-child(2) {
+      background-color: #c3c4c8;
+    }
+    &:nth-child(3) {
+      background-color: #6d6e71;
+    }
+    &:nth-child(4) {
+      background-color: #accd07;
+    }
+    &:last-child {
+      background-color: #7d9c04;
+    }
+  }
+}

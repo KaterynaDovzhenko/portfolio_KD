@@ -16,9 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Rufina&display=swap"
       rel="stylesheet"
     />
-    <!-- <script src="libs/gsap/gsap.min.js" defer></script>
-    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-    <script src="libs/gsap/ScrollSmoother.min.js" defer></script> -->
+    <script src="../libs/gsap/gsap.min.js" defer></script>
+    <script src="../libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="../libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="../js/scroll.js"></script>
+
   </head>
   <body>
     <!-- <a href="#header" class="to-top">
@@ -51,8 +53,8 @@
       </svg>
     </a> -->
 
-    <!-- <div class="wrapper"> -->
-      <!-- <div class="content"> -->
+    <div class="wrapper">
+      <div class="content">
      <header id="header" class="portfolio__header">
       <div class="container">
         <div class="main-nav">
@@ -102,7 +104,7 @@
                 <li><p>#Icons</p></li>
             </ul>
             <h2 class="section-title">Colors</h2>
-            <ul class="colors colors__masfor">
+            <ul class="colors colors__cozycasa">
                 <li class="colors-item"><div><p>#F0F0F0</p></div></li>
                 <li class="colors-item"><div><p>#C3C4C8</p></div></li>
                 <li class="colors-item"><div><p>#6D6E71</p></div></li>
@@ -113,37 +115,102 @@
         </section>
         <section class="demonstration">
           <div class="container">
-             <picture>
+            <div class="cozycasa__prototype-part1">
+                 <picture>
                   <source
-                    srcset="../img/img-portfolio-items/cozycasa-prototype.webp 1x, ../img/img-portfolio-items/cozycasa-prototype@2x.webp 2x"
+                    srcset="../img/img-portfolio-items/cozycasa-prototype-part1.webp 1x, ../img/img-portfolio-items/cozycasa-prototype-part1@2x.webp 2x"
                     type="image/webp"
                   />
                   <source
-                    srcset="../img/img-portfolio-items/cozycasa-prototype.jpg 1x, ../img/img-portfolio-items/cozycasa-prototype@2x.jpg 2x"
+                    srcset="../img/img-portfolio-items/cozycasa-prototype-part1.jpg 1x, ../img/img-portfolio-items/cozycasa-prototype-part1@2x.jpg 2x"
                     type="image/jpeg"
                   />
                   <img
-                    class="masfor__mockup"
-                    src="../img/img-portfolio-items/cozycasa-prototype.jpg"
+                    class="portfolio__mockup"
+                    src="../img/img-portfolio-items/cozycasa-prototype-part1.jpg"
                     alt="ptototype of website for sneakers store"
                   />
             </picture>
-            <div data-speed=".9" class="mockup__masfor">
-              
-            </div>
-        
-              <picture>
+              <div class="cozycasa__mobile-mockup" data-speed=".9">
+                <picture>
                   <source
-                    srcset="./img/img-portfolio-items/mockup-iph-masfor.webp 1x, ./img/img-portfolio-items/mockup-iph-masfor@2x.webp 2x"
+                    srcset="../img/img-portfolio-items/cozycasa-mobile-mockup.webp 1x, ../img/img-portfolio-items/cozycasa-mobile-mockup@2x.webp 2x"
                     type="image/webp"
                   />
                   <source
-                    srcset="./img/img-portfolio-items/mockup-iph-masfor.jpg 1x, ./img/img-portfolio-items/mockup-iph-masfor@2x.jpg 2x"
+                    srcset="../img/img-portfolio-items/cozycasa-mobile-mockup.jpg 1x, ../img/img-portfolio-items/cozycasa-mobile-mockup@2x.jpg 2x"
                     type="image/jpeg"
                   />
                   <img
-                    class="mockup-iph__masfor"
-                    src="./img/img-portfolio-items/mockup-iph-masfor.jpg"
+                   
+                    src="../img/img-portfolio-items/cozycasa-mobile-mockup.jpg"
+                    alt="ptototype of website for sneakers store"
+                  />
+                   </picture>
+            </div>
+            </div>
+<div class="cozycasa__prototype-part2">
+                 <picture>
+                  <source
+                    srcset="../img/img-portfolio-items/cozycasa-prototype-part2.webp 1x, ../img/img-portfolio-items/cozycasa-prototype-part2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="../img/img-portfolio-items/cozycasa-prototype-part2.jpg 1x, ../img/img-portfolio-items/cozycasa-prototype-part2@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__mockup"
+                    src="../img/img-portfolio-items/cozycasa-prototype-part2.jpg"
+                    alt="ptototype of website for sneakers store"
+                  />
+            </picture>
+
+            <div  class="cozycasa__error-mockup" data-speed=".9">
+                <picture>
+                  <source
+                    srcset="../img/img-portfolio-items/cozycasa-error-mockup.webp 1x, ../img/img-portfolio-items/cozycasa-error-mockup@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="../img/img-portfolio-items/cozycasa-error-mockup.jpg 1x, ../img/img-portfolio-items/cozycasa-error-mockup@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                   
+                    src="../img/img-portfolio-items/cozycasa-error-mockup.png"
+                    alt="ptototype of website for sneakers store" 
+                  />
+            </picture>
+            </div>
+</div>
+          <picture>
+                  <source
+                    srcset="../img/img-portfolio-items/cozycasa-branding.webp 1x, ../img/img-portfolio-items/cozycasa-branding@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="../img/img-portfolio-items/cozycasa-branding.jpg 1x, ../img/img-portfolio-items/cozycasa-branding@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__mockup"
+                    src="../img/img-portfolio-items/cozycasa-branding.jpg"
+                    alt="ptototype of website for sneakers store"
+                  />
+            </picture>
+              <picture>
+                  <source
+                    srcset="../img/img-portfolio-items/cozycasa-mockup.webp 1x, ../img/img-portfolio-items/cozycasa-mockup@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="../img/img-portfolio-items/cozycasa-mockup.jpg 1x, ../img/img-portfolio-items/cozycasa-mockup@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__mockup portfolio__cozycasa-img-mockup"
+                    src="../img/img-portfolio-items/cozycasa-mockup.jpg"
                     alt="ptototype of website for sneakers store"
                   />
             </picture>
@@ -220,7 +287,7 @@
         </div>
       </div>
     </footer>
-         <div id="modal" class="modal__menu js-menu-container">
+        <div id="modal" class="modal__menu js-menu-container">
       <div class="container">
        <div class="top-container">
          <div class="top-left-container">
@@ -236,7 +303,7 @@
         <nav class="list-nav portfolio__list-nav">
           <ul>
           <li class="item" >
-            <a class="strikethrough js-nav-link"  href="./index.html">home</a>
+            <a class="strikethrough js-nav-link"  href="../index.html">home</a>
           </li>
           <li class="item" ><a class="strikethrough js-nav-link"  href="#portfolio">works</a></li>
         </ul>
@@ -252,9 +319,10 @@
     
 
       </div>
-    <script src="./js/modal.js"></script>
-      <!-- </div> -->
-    <!-- </div> -->
+      </div>
+    </div>
+        <script src="../js/modal.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  -->
     <!-- <script src="./js/more.js"></script>
     <script src="./js/arrow.js"></script>
     <script src="./js/nav.js"></script>
