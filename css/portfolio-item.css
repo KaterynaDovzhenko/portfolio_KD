@@ -1320,6 +1320,45 @@ header .container {
   fill: #5984f0;
 }
 
+.visit-website__btn {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: #121212;
+  padding: 20px 30px;
+  background-color: #5984f0;
+  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.1, 1);
+}
+@media (min-width: 768px) {
+  .visit-website__btn {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .visit-website__btn {
+    font-size: 18px;
+  }
+}
+.visit-website__btn:hover, .visit-website__btn:active, .visit-website__btn:focus-within {
+  opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .visit-website__btn {
+    margin-bottom: 130px;
+    padding: 20px 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .visit-website__btn {
+    margin-bottom: 150px;
+  }
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;
@@ -1395,11 +1434,6 @@ body .footer {
   margin-right: auto;
   max-width: 100%;
 }
-@media (min-width: 1280px) {
-  .main-section .port-item__img {
-    max-width: 896px;
-  }
-}
 
 .info__text {
   display: flex;
@@ -1413,13 +1447,14 @@ body .footer {
 }
 @media (min-width: 768px) {
   .info__text p {
-    max-width: 894px;
+    max-width: 700px;
     font-size: 16px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .info__text p {
     font-size: 18px;
+    max-width: 900px;
   }
 }
 
@@ -1451,6 +1486,16 @@ body .footer {
 @media (min-width: 1024px) {
   .list-skills p {
     font-size: 18px;
+  }
+}
+
+.portfolio__list-skills {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .list-skills.portfolio__long-list-skills {
+    gap: 20px;
   }
 }
 
@@ -1551,8 +1596,53 @@ body .footer {
   transition: all 1.3s ease;
 }
 
+.portfolio__prototype-part1 {
+  margin-left: auto;
+}
+.portfolio__prototype-part1 div {
+  position: absolute;
+}
+.portfolio__prototype-part1 div .portfolio__mobile-mockup-img {
+  max-width: 120px;
+}
+@media (min-width: 768px) {
+  .portfolio__prototype-part1 div .portfolio__mobile-mockup-img {
+    max-width: 550px;
+  }
+}
+@media (min-width: 1280px) {
+  .portfolio__prototype-part1 div .portfolio__mobile-mockup-img {
+    max-width: none;
+  }
+}
+
+.portfolio__prototype-part2 {
+  position: relative;
+  margin: -7px 0 50px 0;
+}
+.portfolio__prototype-part2 div {
+  position: absolute;
+}
+.portfolio__prototype-part2 div .portfolio__error-mockup-img {
+  max-width: 250px;
+}
+@media (min-width: 768px) {
+  .portfolio__prototype-part2 div .portfolio__error-mockup-img {
+    max-width: 550px;
+  }
+}
+@media (min-width: 1280px) {
+  .portfolio__prototype-part2 div .portfolio__error-mockup-img {
+    max-width: none;
+  }
+}
+
 .portfolio__mockup {
   max-width: 100%;
+}
+
+.portfolio__img-mockup {
+  margin-top: -7px;
 }
 
 .masfor__sneaker {
@@ -1624,75 +1714,37 @@ body .footer {
   }
 }
 
-.cozycasa__prototype-part1 {
-  margin-left: auto;
-}
-.cozycasa__prototype-part1 .cozycasa__mobile-mockup {
-  position: absolute;
+.cozycasa__mobile-mockup {
   top: 7%;
   left: 3%;
 }
 @media (min-width: 768px) {
-  .cozycasa__prototype-part1 .cozycasa__mobile-mockup {
+  .cozycasa__mobile-mockup {
     left: 6%;
   }
 }
 @media (min-width: 1280px) {
-  .cozycasa__prototype-part1 .cozycasa__mobile-mockup {
+  .cozycasa__mobile-mockup {
     left: 3%;
   }
 }
-.cozycasa__prototype-part1 .cozycasa__mobile-mockup .cozycasa__mobile-mockup-img {
-  max-width: 120px;
-}
-@media (min-width: 768px) {
-  .cozycasa__prototype-part1 .cozycasa__mobile-mockup .cozycasa__mobile-mockup-img {
-    max-width: 550px;
-  }
-}
-@media (min-width: 1280px) {
-  .cozycasa__prototype-part1 .cozycasa__mobile-mockup .cozycasa__mobile-mockup-img {
-    max-width: none;
-  }
-}
 
-.cozycasa__prototype-part2 {
-  position: relative;
-  margin-top: -7px;
-}
-.cozycasa__prototype-part2 .cozycasa__error-mockup {
+.cozycasa__error-mockup {
   position: absolute;
   top: 45%;
   left: 40%;
 }
 @media (min-width: 768px) {
-  .cozycasa__prototype-part2 .cozycasa__error-mockup {
+  .cozycasa__error-mockup {
     top: 45%;
     left: 45%;
   }
 }
 @media (min-width: 1280px) {
-  .cozycasa__prototype-part2 .cozycasa__error-mockup {
+  .cozycasa__error-mockup {
     top: 40%;
     left: 40%;
   }
-}
-.cozycasa__prototype-part2 .cozycasa__error-mockup-img {
-  max-width: 250px;
-}
-@media (min-width: 768px) {
-  .cozycasa__prototype-part2 .cozycasa__error-mockup-img {
-    max-width: 550px;
-  }
-}
-@media (min-width: 1280px) {
-  .cozycasa__prototype-part2 .cozycasa__error-mockup-img {
-    max-width: none;
-  }
-}
-
-.portfolio__cozycasa-img-mockup {
-  margin-top: -7px;
 }
 
 .colors__cozycasa li:first-child {
@@ -1709,6 +1761,55 @@ body .footer {
 }
 .colors__cozycasa li:last-child {
   background-color: #7d9c04;
+}
+
+.colors__crstudio li:first-child {
+  background-color: #303030;
+}
+.colors__crstudio li:first-child p {
+  color: #bec5d4;
+}
+.colors__crstudio li:nth-child(2) {
+  background-color: #555555;
+}
+.colors__crstudio li:nth-child(2) p {
+  color: #bec5d4;
+}
+.colors__crstudio li:nth-child(3) {
+  background-color: #f7f7f7;
+}
+.colors__crstudio li:last-child {
+  background-color: #e98248;
+}
+
+.portfolio__prototype-part2 div .portfolio__mobile-mockup-img.crstudio__mobile-mockup-img {
+  transform: rotate(45deg);
+  max-width: 120px;
+}
+@media (min-width: 768px) {
+  .portfolio__prototype-part2 div .portfolio__mobile-mockup-img.crstudio__mobile-mockup-img {
+    max-width: 250px;
+  }
+}
+@media (min-width: 1280px) {
+  .portfolio__prototype-part2 div .portfolio__mobile-mockup-img.crstudio__mobile-mockup-img {
+    max-width: 300px;
+  }
+}
+
+.crstudio__mobile-mockup {
+  top: 2%;
+  left: 50%;
+}
+@media (min-width: 768px) {
+  .crstudio__mobile-mockup {
+    left: 56%;
+  }
+}
+@media (min-width: 1280px) {
+  .crstudio__mobile-mockup {
+    left: 50%;
+  }
 }
 
 /*# sourceMappingURL=portfolio-item.css.map */
