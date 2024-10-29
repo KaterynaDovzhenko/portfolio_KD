@@ -1320,6 +1320,13 @@ header .container {
   fill: #5984f0;
 }
 
+.footer.footer__portfolio-item .container {
+  justify-content: space-between;
+}
+.footer.footer__portfolio-item .container .footer__right-container {
+  width: auto;
+}
+
 .visit-website__btn {
   display: table;
   margin-left: auto;

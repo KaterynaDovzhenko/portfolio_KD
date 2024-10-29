@@ -62,5 +62,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-console.log("ScrollSmoother and ScrollTrigger initialized");

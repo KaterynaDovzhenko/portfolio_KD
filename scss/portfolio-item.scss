@@ -265,6 +265,13 @@ body {
   margin-top: -7px;
 }
 
+.portfolio-item__video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 24 / 16;
+}
+
 ///////////////      MASFOR      /////////////
 
 .masfor__sneaker {
@@ -408,7 +415,7 @@ body {
       max-width: 250px;
     }
     @media (min-width: 1280px) {
-      max-width: 300px;
+      max-width: 280px;
     }
   }
 }
@@ -422,4 +429,37 @@ body {
   @media (min-width: 1280px) {
     left: 50%;
   }
+}
+
+///////////////      ROAD TIME      /////////////
+
+.colors__roadtime {
+  li {
+    &:first-child {
+      background-color: #f1f1f1;
+    }
+    &:nth-child(2) {
+      background-color: #bead8d;
+    }
+    &:nth-child(3) {
+      background-color: #686d6f;
+    }
+    &:last-child {
+      background-color: #2c2c2d;
+      p {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.portfolio__roadtime-img-mockup {
+  margin-left: 150px;
+}
+
+.roadtime__mobile-mockup-img {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  max-width: 25%;
 }

@@ -321,6 +321,15 @@ header {
   }
 }
 
+.footer.footer__portfolio-item {
+  .container {
+    justify-content: space-between;
+    .footer__right-container {
+      width: auto;
+    }
+  }
+}
+
 ////////// BTN
 
 .visit-website__btn {

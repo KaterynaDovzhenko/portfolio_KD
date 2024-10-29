@@ -1320,6 +1320,13 @@ header .container {
   fill: #5984f0;
 }
 
+.footer.footer__portfolio-item .container {
+  justify-content: space-between;
+}
+.footer.footer__portfolio-item .container .footer__right-container {
+  width: auto;
+}
+
 .visit-website__btn {
   display: table;
   margin-left: auto;
@@ -1645,6 +1652,13 @@ body .footer {
   margin-top: -7px;
 }
 
+.portfolio-item__video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 24/16;
+}
+
 .masfor__sneaker {
   position: absolute;
   top: 20%;
@@ -1793,7 +1807,7 @@ body .footer {
 }
 @media (min-width: 1280px) {
   .portfolio__prototype-part2 div .portfolio__mobile-mockup-img.crstudio__mobile-mockup-img {
-    max-width: 300px;
+    max-width: 280px;
   }
 }
 
@@ -1810,6 +1824,33 @@ body .footer {
   .crstudio__mobile-mockup {
     left: 50%;
   }
+}
+
+.colors__roadtime li:first-child {
+  background-color: #f1f1f1;
+}
+.colors__roadtime li:nth-child(2) {
+  background-color: #bead8d;
+}
+.colors__roadtime li:nth-child(3) {
+  background-color: #686d6f;
+}
+.colors__roadtime li:last-child {
+  background-color: #2c2c2d;
+}
+.colors__roadtime li:last-child p {
+  color: #bec5d4;
+}
+
+.portfolio__roadtime-img-mockup {
+  margin-left: 150px;
+}
+
+.roadtime__mobile-mockup-img {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  max-width: 25%;
 }
 
 /*# sourceMappingURL=portfolio-item.css.map */
