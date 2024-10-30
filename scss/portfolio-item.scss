@@ -454,7 +454,10 @@ body {
 }
 
 .portfolio__roadtime-img-mockup {
-  margin-left: 150px;
+  margin-left: 100px;
+  @media (min-width: $breakpoint-tablet) {
+    margin-left: 150px;
+  }
 }
 
 .roadtime__mobile-mockup-img {

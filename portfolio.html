@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kateryna Dovzhenko</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./js/scroll.js"></script>
+
+  </head>
+  <body>
+    <a href="#header" class="to-top">
+      <!-- <svg
+        class="scroll__svg"
+        xmLns="http://www.w3.org/2000/svg"
+        xml:Lang="en"
+        xmlns:xLink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 500 500"
+      >
+        <defs>
+          <path
+            id="textcircle"
+            d="M250, 400 
+            a150,150 0 0, 1 0, -300a150, 150 0 0,1 0,300Z"
+            transform="rotate (12,250,250)"
+          />
+        </defs>
+        <g class="textcircle">
+          <text class="scroll__text" textlength="940">
+            <textpath
+              xlink:href="#textcircle"
+              aria-Label="Scroll up"
+              textlength="940"
+            >
+              scroll up | scroll up | scroll up |
+            </textpath>
+          </text>
+        </g>
+      </svg> -->
+    </a>
+
+    <div class="wrapper">
+      <div class="content">
+        <header id="header">
+         <div class="container">
+        <div class="main-nav">
+          <button
+            type="button"
+            class="strikethrough btn-menu js-open-menu"
+            aria-expanded="false"
+          >
+            menu
+          </button>
+        </div>
+         </div>
+        </header>
+        <main>
+          <div class="text-header-container">
+            <div>
+              <p>I am a</p>
+              <p>
+                <span class="word wisteria">design.</span>
+                <span class="word belize">productivity.</span>
+                <span class="word pomegranate">FED.</span>
+                <span class="word green">creativity.</span>
+                <span class="word midnight">PM.</span>
+              </p>
+            </div>
+          </div>
+          <div class="portfolio__grid-container">
+            <div data-speed="1.1" class="gallery-container w-4 h-2">
+              <div class="gallery-item">
+                <a href="./portfolio-list/masfor.html" class="image">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img-portfolio-items/masfor-port.webp    1x,
+                        ./img/img-portfolio-items/masfor-port@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/img-portfolio-items/masfor-port.jpg    1x,
+                        ./img/img-portfolio-items/masfor-port@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./img/img-portfolio-items/masfor-port.jpg"
+                      alt="Masfor design for sneakers website"
+                    />
+                  </picture>
+                </a>
+                <div>Masfor</div>
+              </div>
+            </div>
+
+            <div data-speed="1.1" class="gallery-container w-2 h-3">
+              <div class="gallery-item">
+                <a class="image" href="./coming-soon.html">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/story-port.webp    1x,
+                        ./img/story-port@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/story-port.jpg    1x,
+                        ./img/story-port@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="story-position"
+                      src="./img/story-port.jpg"
+                      alt="Fairytale Website design"
+                    />
+                  </picture>
+                </a>
+                <div>Lum</div>
+              </div>
+            </div>
+
+            <div class="gallery-container w-2-5 h-2">
+              <div class="gallery-item">
+                <a class="image" href=./coming-soon.html>
+                  <picture>
+                    <source
+                      srcset="./img/app-port.webp 1x, ./img/app-port@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./img/app-port.jpg 1x, ./img/app-port@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="app-position"
+                      src="./img/app-port.jpg"
+                      alt="Design of app which is similar to Discrod"
+                    />
+                  </picture>
+                </a>
+                <div>Mag</div>
+              </div>
+            </div>
+
+            <div data-speed=".9" class="gallery-container w-2 h-4">
+              <div class="gallery-item">
+                <a class="image" href="./portfolio-list/cozycasa.html">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/cozycasa-port.webp    1x,
+                        ./img/cozycasa-port@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/cozycasa-port.jpg    1x,
+                        ./img/cozycasa-port@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="cozycasa-position"
+                      src="./img/cozycasa-port.jpg"
+                      alt="Design for website with furniture"
+                    />
+                  </picture>
+                </a>
+                <div>CozyCasa</div>
+              </div>
+            </div>
+
+            <div class="gallery-container w-2 h-1">
+              <div class="gallery-item">
+                <a class="image" href="./portfolio-list/roadtime.html">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/roadtime-port.webp    1x,
+                        ./img/roadtime-port@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/roadtime-port.jpg    1x,
+                        ./img/roadtime-port@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./img/roadtime-port.jpg"
+                      alt="Design for website of cars"
+                    />
+                  </picture>
+                </a>
+                <div>RoadTime</div>
+              </div>
+            </div>
+
+            <div data-speed="1.1" class="gallery-container w-2 h-3">
+              <div class="gallery-item">
+                <a class="image" href="./portfolio-list/crstudio.html">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/gnome-port.webp    1x,
+                        ./img/gnome-port@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/gnome-port.jpg    1x,
+                        ./img/gnome-port@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./img/gnome-port.jpg"
+                      alt="CrStudio, design of the website for creative courses"
+                    />
+                  </picture>
+                </a>
+                <div>CrStudio</div>
+              </div>
+            </div>
+
+            <div data-speed=".9" class="gallery-container w-2 h-2">
+              <div class="gallery-item">
+                <a class="image" href="./coming-soon.html">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/login-port.webp    1x,
+                        ./img/login-port@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/login-port.jpg    1x,
+                        ./img/login-port@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./img/login-port.jpg" alt="log in page design" />
+                  </picture>
+                </a>
+                <div>LogIn</div>
+              </div>
+            </div>
+
+            <div class="gallery-container w-4 h-2">
+              <div class="gallery-item">
+                <a class="image" href="./coming-soon.html">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/home-port.webp    1x,
+                        ./img/home-port@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./img/home-port.jpg 1x, ./img/home-port@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./img/home-port.jpg"
+                      alt="Design for the first psge of game website"
+                    />
+                  </picture>
+                </a>
+                <div>Derks</div>
+              </div>
+            </div>
+          </div>
+        </main>
+       <footer class="footer footer__portfolio footer__portfolio-item">
+      <div class="container">
+        <div class="footer__mobile-container">
+          <div class="footer__left-container">
+          <h3>Kateryna Dovzhenko</h3>
+          <p class="paragraph">©2023 All Rights Reserved</p>
+        </div>
+        </div>
+
+        <div class="footer__right-container">
+          <p>keep in touch</p>
+          <ul class="social-media-list">
+            <li>
+              <a target="_blank" class="social-media-btn" href="https://t.me/katiedov"
+                ><svg class="social-media-svg">
+                  <use href="../icons.svg#telega-icon"></use>
+                  >
+                </svg>
+                <span class="icon-bg"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="social-media-btn"
+                href="https://linktr.ee/katedov?utm_source=linktree_profile_share&ltsid=e199aaf0-2625-4949-b76d-6671b83e06ec"
+                ><svg class="social-media-svg">
+                  <use href="../icons.svg#linktree-icon"></use>
+                  >
+                </svg>
+                <span class="icon-bg"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="social-media-btn"
+                href="https://www.linkedin.com/in/kateryna-dovzhenko-123179205/"
+                ><svg class="social-media-svg">
+                  <use href="../icons.svg#linkedin-icon"></use>
+                  >
+                </svg>
+                <span class="icon-bg"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+          <div id="modal" class="modal__menu js-menu-container">
+      <div class="container">
+       <div class="top-container">
+         <div class="top-left-container">
+          <span>kateryna dovzhenko</span>
+          <a class="contact" href="tel:+16462201775">+1 646 220 1775</a>
+        </div>
+    
+        <button class="strikethrough btn-menu js-close-menu">
+            menu
+          </button>
+       </div>
+       
+        <nav class="list-nav">
+          <ul>
+          <li class="item" >
+            <a class="strikethrough js-nav-link"   href="./index.html">home</a>
+          </li>
+        </ul>
+        </nav>
+        <ul class="modal__social-list">
+          <li><a target="_blank" href="https://linktr.ee/katedov?utm_source=linktree_profile_share&ltsid=e199aaf0-2625-4949-b76d-6671b83e06ec">linktree</a></li>
+          <li><a target="_blank" href="https://t.me/katiedov">telegram</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/kateryna-dovzhenko-123179205/">linkedin</a></li>
+        </ul>
+      </nav>
+
+      </div>
+    
+
+      </div>
+      </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/smooth-navigation.js"></script>
+    <script src="./js/portfolio-text.js"></script>
+    <!-- <script>
+      $(document).ready(function () {
+        $("a[href*=#]").on("click", function (e) {
+          var anchor = $(this);
+          $("html, body")
+            .stop()
+            .animate(
+              {
+                scrollTop: $(anchor.attr("href")).offset().top,
+              },
+              1100
+            );
+          e.preventDefault();
+          return false;
+        });
+      });
+    </script> -->
+    <script src="./js/text-portfolio.js"></script>
+  </body>
+</html>
