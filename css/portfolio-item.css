@@ -585,6 +585,7 @@ body {
 }
 
 .ideas__paragraph {
+  display: block;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {

@@ -483,6 +483,7 @@
 }
 
 .ideas__paragraph {
+  display: block;
   margin-bottom: 50px;
   @media (min-width: $breakpoint-tablet) {
     margin-bottom: 80px;
