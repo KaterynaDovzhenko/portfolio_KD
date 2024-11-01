@@ -88,15 +88,15 @@
     }
   }
   .second-span-bg {
-    top: 680px;
+    top: 620px;
     left: -410px;
     @media (min-width: $breakpoint-tablet) {
-      top: 280px;
+      top: 260px;
       left: 110px;
       max-width: calc(100vw - 110px);
     }
     @media (min-width: $breakpoint-tablet) {
-      top: 380px;
+      top: 350px;
       left: 110px;
     }
   }
