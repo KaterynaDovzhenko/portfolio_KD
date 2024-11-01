@@ -40,6 +40,10 @@ header,
   }
   .container {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     @media (min-width: $breakpoint-tablet) {
       padding: 40px 0;
     }
@@ -73,7 +77,7 @@ header,
       }
     }
     .list-nav {
-      margin: 60px auto 90px;
+      // margin: 60px auto 90px;
       text-align: center;
       .strikethrough {
         display: inline-block;
@@ -354,5 +358,59 @@ header {
   }
   @media (min-width: 1280px) {
     margin-bottom: 150px;
+  }
+}
+
+/* SCROLL UP */
+
+.to-top {
+  position: fixed;
+  bottom: 1%;
+  right: 0.3%;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+
+  justify-content: center;
+  text-decoration: none;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.4s;
+  z-index: 2;
+  @media (min-width: $breakpoint-tablet) {
+    bottom: 5%;
+    right: 2%;
+  }
+  &.active {
+    bottom: 1%;
+    opacity: 1;
+    pointer-events: auto;
+    @media (min-width: $breakpoint-tablet) {
+      bottom: 5%;
+    }
+  }
+}
+.scroll__text {
+  fill: $secondary-color;
+  font-family: "Rufina", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-variant-ligatures: none;
+  letter-spacing: 26px;
+  animation: 25s linear infinite rotate;
+  transform-origin: 250px;
+  @media (min-width: $breakpoint-tablet) {
+    transform-origin: 250px;
+  }
+}
+
+.scroll__svg {
+  width: 100px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
 }

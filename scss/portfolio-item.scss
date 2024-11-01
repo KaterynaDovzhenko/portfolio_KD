@@ -16,15 +16,6 @@
   @media (min-width: $breakpoint-tablet) and (max-width: 1280px) {
     padding: 40px;
   }
-  .list-nav.portfolio__list-nav {
-    margin: 200px 0;
-    @media (min-width: $breakpoint-tablet) {
-      margin: 160px 0;
-    }
-    @media (min-width: 1280) {
-      margin: 200px 0;
-    }
-  }
 }
 body {
   background-color: $bg-color;
@@ -487,9 +478,50 @@ body {
 
 .portfolio__lum-img-mockup {
   position: absolute;
-  width: 25%;
-  left: -14%;
+  width: 20%;
+  left: 4%;
+  top: 5%;
   @media (min-width: $breakpoint-tablet) {
-    // margin-left: 150px;
+    width: 25%;
+    left: -14%;
   }
+}
+
+///////////////      HOME      /////////////
+
+.colors__home {
+  li {
+    &:first-child {
+      background-color: #e5e2e3;
+    }
+    &:nth-child(2) {
+      background-color: #91959c;
+    }
+    &:nth-child(3) {
+      background-color: #d2cd5c;
+    }
+    &:nth-child(4) {
+      background-color: #2b4b6f;
+      p {
+        color: $secondary-color;
+      }
+    }
+    &:last-child {
+      background-color: #243041;
+      p {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+.portfolio__home-img-mockup {
+  position: absolute;
+  width: 20%;
+  left: 10%;
+}
+
+.home__desktop-mockup {
+  width: 70%;
+  text-align: center;
+  margin-left: 30%;
 }
