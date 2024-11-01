@@ -269,7 +269,6 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  aspect-ratio: 24 / 16;
 }
 
 ///////////////      MASFOR      /////////////
@@ -465,4 +464,32 @@ body {
   top: 15%;
   left: 15%;
   max-width: 25%;
+}
+
+///////////////      LUM      /////////////
+
+.colors__lum {
+  li {
+    &:first-child {
+      background-color: #f1f1f1;
+    }
+    &:nth-child(2) {
+      background-color: #c9def9;
+    }
+    &:nth-child(3) {
+      background-color: #467486;
+    }
+    &:last-child {
+      background-color: #4a6478;
+    }
+  }
+}
+
+.portfolio__lum-img-mockup {
+  position: absolute;
+  width: 25%;
+  left: -14%;
+  @media (min-width: $breakpoint-tablet) {
+    // margin-left: 150px;
+  }
 }
