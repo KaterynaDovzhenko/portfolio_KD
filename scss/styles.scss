@@ -14,6 +14,11 @@ header,
   will-change: transform;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 ///////////// MODAL WINDOW
 
 .modal__menu {
@@ -77,7 +82,6 @@ header,
       }
     }
     .list-nav {
-      // margin: 60px auto 90px;
       text-align: center;
       .strikethrough {
         display: inline-block;
@@ -414,3 +418,17 @@ header {
     transform: rotate(360deg);
   }
 }
+
+// [data-aos] {
+//   opacity: 0; /* Invisible by default */
+//   visibility: hidden;
+// }
+
+// /* Apply styles only for smaller screens (Mobile/Tablets) */
+// @media (max-width: 768px) {
+//   [data-aos] {
+//     opacity: 1;
+//     visibility: visible;
+//     background-color: yellow;
+//   }
+// }

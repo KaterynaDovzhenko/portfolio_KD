@@ -1177,6 +1177,11 @@ header,
   will-change: transform;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 .modal__menu {
   position: fixed;
   top: 0;

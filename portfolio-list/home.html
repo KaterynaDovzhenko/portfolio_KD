@@ -19,6 +19,7 @@
     <script src="../libs/gsap/gsap.min.js" defer></script>
     <script src="../libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="../libs/gsap/ScrollTrigger.min.js" defer></script>
+         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="../js/scroll.js"></script>
   </head>
   <body>
@@ -70,14 +71,14 @@
       <main>
         <section class="main-section">
            <div class="container">
-             <h1 class="section-title">HomeLab</h1>
+             <h1 data-aos="zoom-in" data-aos-duration="400" class="section-title">HomeLab</h1>
          <picture class="fallback-image" style="display: none;">
   <source srcset="../img/img-portfolio-items/home-main.webp 1x, ../img/img-portfolio-items/home-main@2x.webp 2x" type="image/webp">
   <source srcset="../img/img-portfolio-items/home-main.jpg 1x, ../img/img-portfolio-items/home-main@2x.jpg 2x" type="image/jpeg">
   <img src="../img/img-portfolio-items/home-main.jpg" alt="Fallback Image" />
 </picture>
-<video class="portfolio-item__video" src="../img/img-portfolio-items/home-video.mp4" controls autoplay loop muted>
-  Your browser does not support the video tag.
+<video autoplay loop muted playsinline data-aos="flip-down" class="portfolio-item__video" src="../img/img-portfolio-items/home-video.mp4">
+    Your browser does not support the video tag.
 </video>
 
 </div>
@@ -85,15 +86,15 @@
         <section class="info">
 
                <div class="info__text">
-                <p> For HomeLab, I crafted a captivating hero section that invites users to step into the role of architect for their dream home. The design opens with an inspiring message: "Create your dream house," drawing users into an interactive experience where they can design and customize every detail. This hero section sets the stage for creativity and personalization, reflecting HomeLab's unique offering—a virtual space for users to explore their style and bring their ideal home to life. The result is an engaging introduction that makes users feel empowered to start building from the very first moment.</p>
+                <p data-aos="zoom-in" > For HomeLab, I crafted a captivating hero section that invites users to step into the role of architect for their dream home. The design opens with an inspiring message: "Create your dream house," drawing users into an interactive experience where they can design and customize every detail. This hero section sets the stage for creativity and personalization, reflecting HomeLab's unique offering—a virtual space for users to explore their style and bring their ideal home to life. The result is an engaging introduction that makes users feel empowered to start building from the very first moment.</p>
               </div>            
             <ul class="list-skills">
-                <li><p>#UI&UX Design</p></li>
-                <li><p>#Web Design</p></li>
-                <li><p>#Illustrations</p></li>
+                <li data-aos="fade-right"><p>#UI&UX Design</p></li>
+                <li data-aos="fade-right"><p>#Web Design</p></li>
+                <li data-aos="fade-right"><p>#Illustrations</p></li>
             </ul>
-            <h2 class="section-title">Colors</h2>
-            <ul class="colors colors__home">
+            <h2 data-aos="zoom-in" class="section-title">Colors</h2>
+            <ul data-aos="flip-up" class="colors colors__home">
                 <li class="colors-item"><div><p>#E5E2E3</p></div></li>
                 <li class="colors-item"><div><p>#91959C</p></div></li>
                 <li class="colors-item"><div><p>#D2CD5C</p></div></li>
@@ -104,7 +105,7 @@
         </section>
         <section class="demonstration">
           <div class="container">
-            <div data-speed=".9">
+            <div data-aos="zoom-out" data-speed=".9">
                <picture>
                   <source
                     srcset="../img/img-portfolio-items/home-mobile-mockup.webp 1x, ../img/img-portfolio-items/home-mobile-mockup@2x.webp 2x"
@@ -131,7 +132,7 @@
                     srcset="../img/img-portfolio-items/home-mockup.jpg 1x, ../img/img-portfolio-items/home-mockup@2x.jpg 2x"
                     type="image/jpeg"
                   />
-                  <img class="portfolio__mockup home__desktop-mockup"
+                  <img data-aos="zoom-in" class="portfolio__mockup home__desktop-mockup"
                     src="../img/img-portfolio-items/home-mockup.jpg"
                     alt="ptototype of website for car store"
                   />
@@ -144,7 +145,7 @@
         </section>
        
         </main>
-       <footer class="footer footer__portfolio-item">
+       <footer data-aos="zoom-in" class="footer footer__portfolio-item">
       <div class="container">
         <div class="footer__mobile-container">
           <div class="footer__left-container">
@@ -230,10 +231,8 @@
         <script src="../js/modal.js"></script>
    <script src="../js/portfolio-item-video.js"></script>
    <script src="../js/scroll-top.js"></script>
-    <!-- <script src="./js/more.js"></script>
-    <script src="./js/arrow.js"></script>
-    <script src="./js/nav.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  -->
+       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/animation-library.js"></script>
 
   </body>
 </html>

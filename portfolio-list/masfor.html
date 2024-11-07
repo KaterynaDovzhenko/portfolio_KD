@@ -19,6 +19,7 @@
     <script src="../libs/gsap/gsap.min.js" defer></script>
     <script src="../libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="../libs/gsap/ScrollTrigger.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="../js/scroll.js"></script>
   </head>
   <body>
@@ -69,7 +70,7 @@
       <main>
         <section class="main-section">
            <div class="container">
-             <h1 class="section-title masfor">Masfor</h1>
+             <h1 data-aos="zoom-in" data-aos-duration="400" class="section-title masfor">Masfor</h1>
           <picture>
                   <source
                     srcset="../img/img-portfolio-items/masfor-port-item.webp 1x, ../img/img-portfolio-items/masfor-port-item@2x.webp 2x"
@@ -79,13 +80,13 @@
                     srcset="../img/img-portfolio-items/masfor-port-item.jpg 1x, ../img/img-portfolio-items/masfor-port-item@2x.jpg 2x"
                     type="image/jpeg"
                   />
-                  <img
+                  <img data-aos="zoom-in" 
                     class="port-item__img"
                     src="../img/img-portfolio-items/masfor-port-item.jpg"
                     alt="ptototype of website for sneakers store"
                   />
             </picture>
-          <div class="masfor__sneaker"  data-speed=".9">
+          <div data-aos="zoom-out"class="masfor__sneaker"  data-speed=".9">
               <picture>
                   <source
                     srcset="../img/img-portfolio-items/masfor-sneaker.webp 1x, ../img/img-portfolio-items/masfor-sneaker@2x.webp 2x"
@@ -106,16 +107,16 @@
         <section class="info">
 
                <div class="info__text">
-                <p> For Masfor, I had the honor of designing and creating a world-class web platform. This project offers sneaker enthusiasts a high-end buying experience by skillfully fusing style and usability. Our main goals were to provide a simple user interface (UI) and an engaging user experience (UX). Navigation was made simpler so that users could easily browse a big selection of sneakers. Each page was painstakingly designed to capture the distinct brand personality of Masfor. The outcome is a user-friendly, responsive website that encourages users to easily delve into the world of sneakers. It is about celebrating a passion, not simply buying shoes.</p>
+                <p data-aos="zoom-in" > For Masfor, I had the honor of designing and creating a world-class web platform. This project offers sneaker enthusiasts a high-end buying experience by skillfully fusing style and usability. Our main goals were to provide a simple user interface (UI) and an engaging user experience (UX). Navigation was made simpler so that users could easily browse a big selection of sneakers. Each page was painstakingly designed to capture the distinct brand personality of Masfor. The outcome is a user-friendly, responsive website that encourages users to easily delve into the world of sneakers. It is about celebrating a passion, not simply buying shoes.</p>
               </div>            
-            <ul class="list-skills">
-                <li><p>#UI&UX Design</p></li>
-                <li><p>#Web Design</p></li>
-                <li><p>#Icons</p></li>
-                <li><p>#Logo</p></li>
+            <ul  class="list-skills">
+                <li data-aos="fade-right"><p>#UI&UX Design</p></li>
+                <li data-aos="fade-right"><p>#Web Design</p></li>
+                <li data-aos="fade-right"><p>#Icons</p></li>
+                <li data-aos="fade-right"><p>#Logo</p></li>
             </ul>
-            <h2 class="section-title">Colors</h2>
-            <ul class="colors colors__masfor">
+            <h2 data-aos="zoom-in" class="section-title">Colors</h2>
+            <ul data-aos="flip-up" class="colors colors__masfor">
                 <li class="colors-item"><div><p>#282129</p></div></li>
                 <li class="colors-item"><div><p>#9C999C</p></div></li>
                 <li class="colors-item"><div><p>#ECECEC</p></div></li>
@@ -125,7 +126,7 @@
         </section>
         <section class="demonstration">
           <div class="container">
-            <div data-speed=".9" class="mockup__masfor">
+            <div data-aos="zoom-in" data-speed=".9" class="mockup__masfor">
                <picture>
                   <source
                     srcset="../img/img-portfolio-items/mockup-masfor.webp 1x, ../img/img-portfolio-items/mockup-masfor@2x.webp 2x"
@@ -152,7 +153,7 @@
                     srcset="../img/img-portfolio-items/mockup-iph-masfor.jpg 1x, ../img/img-portfolio-items/mockup-iph-masfor@2x.jpg 2x"
                     type="image/jpeg"
                   />
-                  <img
+                  <img data-aos="zoom-out"
                     class="mockup-iph__masfor"
                     src="../img/img-portfolio-items/mockup-iph-masfor.jpg"
                     alt="ptototype of website for sneakers store"
@@ -166,7 +167,7 @@
         </section>
        
         </main>
-       <footer class="footer footer__portfolio-item">
+       <footer data-aos="zoom-in" class="footer footer__portfolio-item">
       <div class="container">
         <div class="footer__mobile-container">
           <div class="footer__left-container">
@@ -231,7 +232,7 @@
         <nav class="list-nav portfolio__list-nav">
           <ul>
           <li class="item" >
-            <a class="strikethrough js-nav-link"  href="./index.html">home</a>
+            <a class="strikethrough js-nav-link"  href="../index.html">home</a>
           </li>
           <li class="item" ><a class="strikethrough js-nav-link"  href="../portfolio.html">works</a></li>
         </ul>
@@ -251,10 +252,7 @@
     </div>
         <script src="../js/modal.js"></script>
            <script src="../js/scroll-top.js"></script>
-
-    <!-- <script src="./js/arrow.js"></script>
-    <script src="./js/nav.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  -->
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/animation-library.js"></script>
   </body>
 </html>

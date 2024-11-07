@@ -19,6 +19,7 @@
     <script src="../libs/gsap/gsap.min.js" defer></script>
     <script src="../libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="../libs/gsap/ScrollTrigger.min.js" defer></script>
+         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="../js/scroll.js"></script>
   </head>
   <body>
@@ -69,13 +70,13 @@
       <main>
         <section class="main-section">
            <div class="container">
-             <h1 class="section-title masfor">Road Time</h1>
+             <h1 data-aos="zoom-in" data-aos-duration="400" class="section-title masfor">Road Time</h1>
          <picture class="fallback-image" style="display: none;">
   <source srcset="../img/img-portfolio-items/roadtime-main.webp 1x, ../img/img-portfolio-items/roadtime-main@2x.webp 2x" type="image/webp">
   <source srcset="../img/img-portfolio-items/roadtime-main.jpg 1x, ../img/img-portfolio-items/roadtime-main@2x.jpg 2x" type="image/jpeg">
   <img src="../img/img-portfolio-items/roadtime-main.jpg" alt="Fallback Image" />
 </picture>
-<video class="portfolio-item__video" src="../img/img-portfolio-items/roadtime-video.mp4" controls autoplay loop muted>
+<video autoplay loop muted playsinline data-aos="flip-down"  class="portfolio-item__video" src="../img/img-portfolio-items/roadtime-video.mp4" >
   Your browser does not support the video tag.
 </video>
 
@@ -84,15 +85,15 @@
         <section class="info">
 
                <div class="info__text">
-                <p> For Road Time, I had the pleasure of designing the logo and creating a visually engaging website that connects customers with their next set of wheels. This project aimed to deliver a compelling user interface (UI) that captures the thrill of car shopping while ensuring a smooth user experience (UX). The design prominently features inviting prompts like, "Looking for your next set of wheels? Look no further than our collection of cars for sale!" Each page was thoughtfully crafted to showcase an extensive range of vehicles, making it easy for users to explore their options. The result is a responsive, user-friendly website that transforms the car-buying journey into an exciting and enjoyable experience.</p>
+                <p data-aos="zoom-in" > For Road Time, I had the pleasure of designing the logo and creating a visually engaging website that connects customers with their next set of wheels. This project aimed to deliver a compelling user interface (UI) that captures the thrill of car shopping while ensuring a smooth user experience (UX). The design prominently features inviting prompts like, "Looking for your next set of wheels? Look no further than our collection of cars for sale!" Each page was thoughtfully crafted to showcase an extensive range of vehicles, making it easy for users to explore their options. The result is a responsive, user-friendly website that transforms the car-buying journey into an exciting and enjoyable experience.</p>
               </div>            
             <ul class="list-skills">
-                <li><p>#UI&UX Design</p></li>
-                <li><p>#Web Design</p></li>
-                <li><p>#Logo</p></li>
+                <li data-aos="fade-right"><p>#UI&UX Design</p></li>
+                <li data-aos="fade-right"><p>#Web Design</p></li>
+                <li data-aos="fade-right"><p>#Logo</p></li>
             </ul>
-            <h2 class="section-title">Colors</h2>
-            <ul class="colors colors__roadtime">
+            <h2 data-aos="zoom-in" class="section-title">Colors</h2>
+            <ul data-aos="flip-up" class="colors colors__roadtime">
                 <li class="colors-item"><div><p>#F1F1F1</p></div></li>
                 <li class="colors-item"><div><p>#BEAD8D</p></div></li>
                 <li class="colors-item"><div><p>#686D6F</p></div></li>
@@ -102,7 +103,7 @@
         </section>
         <section class="demonstration">
           <div class="container">
-            <div data-speed=".9">
+            <div data-aos="zoom-in" data-speed=".9">
                <picture>
                   <source
                     srcset="../img/img-portfolio-items/roadtime-mockup.webp 1x, ../img/img-portfolio-items/roadtime-mockup@2x.webp 2x"
@@ -129,7 +130,7 @@
                     srcset="../img/img-portfolio-items/roadtime-mobile-mockup.jpg 1x, ../img/img-portfolio-items/roadtime-mobile-mockup@2x.jpg 2x"
                     type="image/jpeg"
                   />
-                  <img
+                  <img data-aos="zoom-out" 
                     class="roadtime__mobile-mockup-img"
                     src="../img/img-portfolio-items/roadtime-mobile-mockup.jpg"
                     alt="ptototype of website for car store"
@@ -143,7 +144,7 @@
         </section>
        
         </main>
-       <footer class="footer footer__portfolio-item">
+       <footer data-aos="zoom-in" class="footer footer__portfolio-item">
       <div class="container">
         <div class="footer__mobile-container">
           <div class="footer__left-container">
@@ -210,7 +211,7 @@
           <li class="item" >
             <a class="strikethrough js-nav-link"  href="../index.html">home</a>
           </li>
-          <li class="item" ><a class="strikethrough js-nav-link"  href="#portfolio">works</a></li>
+          <li class="item" ><a class="strikethrough js-nav-link"  href="../portfolio.html">works</a></li>
         </ul>
         </nav>
         <ul class="modal__social-list">
@@ -229,9 +230,7 @@
         <script src="../js/modal.js"></script>
    <script src="../js/portfolio-item-video.js"></script>
       <script src="../js/scroll-top.js"></script>
-    <!-- <script src="./js/more.js"></script>
-    <script src="./js/arrow.js"></script>
-    <script src="./js/nav.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/animation-library.js"></script>
   </body>
 </html>

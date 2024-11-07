@@ -12,10 +12,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
     <script src="./libs/gsap/gsap.min.js" defer></script>
     <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+ <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="./js/scroll.js"></script>
 
   </head>
@@ -69,20 +69,19 @@
       <section class="hero" id="home">
         <div class="hero__container">
           <h1 data-lag=".5" class="hero__title">
-            <span class="hero__first-span">Kateryna</span>
-            <span class="hero__second-span">Dovzhenko</span>
+            <span data-aos="fade-up-right"  class="hero__first-span">Kateryna</span>
+            <span data-aos="fade-up-left" class="hero__second-span">Dovzhenko</span>
           </h1>
         </div>
 
-        <!-- <canvas id="c"></canvas> -->
       </section>
       <section class="about section" id="about">
         <div class="container">
-          <span data-speed=".9" class="span-bg">hello</span>
-          <span data-speed="1.1" class="span-bg second-span-bg">hello</span>
-          <span data-speed="1.2" class="span-bg third-span-bg">hello</span>
-          <h2 class="section-title">Who am I</h2>
-          <div class="about__card" tabindex="0">
+          <span data-speed=".9"  data-aos="fade-up-left" class="span-bg">hello</span>
+          <span data-speed="1.1"  data-aos="zoom-in" class="span-bg second-span-bg">hello</span>
+          <span data-speed="1.2"  data-aos="fade-up-right" class="span-bg third-span-bg">hello</span>
+          <h2 data-aos="zoom-in" data-aos-duration="400" class="section-title" >Who am I</h2>
+          <div data-aos="zoom-in" class="about__card" tabindex="0">
             <svg class="about__svg">
               <use href="./icons.svg#about-icon"></use>
               >
@@ -114,10 +113,10 @@
 
       <section class="works section">
         <div class="container works__container">
-          <h2 data-speed=".8" class="section-title">Works</h2>
+          <h2 data-speed=".8" data-aos="zoom-in" data-aos-duration="400" class="section-title">Works</h2>
           <div class="gallery" id="portfolio">
             <div data-speed=".9" class="gallery__left">
-              <a class="gallery__item masfor__after" href="./portfolio-list/masfor.html">
+              <a data-aos="fade-up-right" class="gallery__item masfor__after" href="./portfolio-list/masfor.html">
                 <picture>
                   <source
                     srcset="./img/masfor.webp 1x, ./img/masfor@2x.webp 2x"
@@ -145,7 +144,7 @@
                   a vibrant online artistic community.
                 </p>
               </div>
-              <a class="gallery__item app__after" href="./portfolio-list/cozycasa.html">
+              <a data-aos="fade-up-left" class="gallery__item app__after" href="./portfolio-list/cozycasa.html">
                 <picture>
                   <source
                     srcset="./img/cozycasa.webp 1x, ./img/cozycasa@2x.webp 2x"
@@ -187,7 +186,7 @@
                   expansion of its business.
                 </p>
               </div>
-              <a
+              <a data-aos="fade-up-right"
                 class="gallery__item crstudio__after"
                 href="./portfolio-list/crstudio.html"
               >
@@ -219,7 +218,7 @@
                   how it was transformed CozyCasa's digital presence.
                 </p>
               </div>
-              <a
+              <a data-aos="fade-up-left"
                 class="gallery__item roadtime__after"
                 href="./portfolio-list/roadtime.html"
               >
@@ -250,11 +249,11 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section-title ideas__section-title">
+          <h2 data-aos="zoom-in" data-aos-duration="400" class="section-title ideas__section-title">
             Do you have any ideas?
           </h2>
           <p class="paragraph ideas__paragraph">let's do it together!</p>
-          <div data-speed="1.1" class="main__btn-cotainer-ideas" href="#">
+          <div data-speed="1.1" data-aos="fade-up-left" class="main__btn-cotainer-ideas" href="#">
             <a target="_blank" href="https://t.me/katiedov" class="card">
               <svg class="social-media-svg telega">
                 <use href="./icons.svg#telega-icon"></use>
@@ -290,8 +289,8 @@
         <div class="container">
           <div class="skills__container">
             <div class="skills__left-container">
-              <h2 class="section-title skills__title">My story...</h2>
-              <div>
+              <h2 data-aos="zoom-in" data-aos-duration="400" class="section-title skills__title">My story...</h2>
+              <div data-aos="fade-up-right">
                 <input type="checkbox" class="read-more-state" id="post-2" />
                 <label for="post-2" class="read-more-trigger"></label>
                 <ul class="read-more-wrap skills__list">
@@ -349,7 +348,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer data-aos="zoom-in" data-aos-duration="400" class="footer">
       <div class="container">
         <div class="footer__mobile-container">
           <div class="footer__left-container">
@@ -454,8 +453,9 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/smooth-navigation.js"></script>
-       <script src="../js/scroll-top.js"></script>
-
+       <script src="./js/scroll-top.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./js/animation-library.js"></script>
     
     <!-- <script src="./js/promo.js"></script>  -->
     <!-- <script src="./js/overflow.js"></script> -->

@@ -1177,6 +1177,11 @@ header,
   will-change: transform;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 .modal__menu {
   position: fixed;
   top: 0;
@@ -1815,9 +1820,6 @@ body .footer {
 .demonstration .container {
   position: relative;
   margin-top: 170px;
-}
-.demonstration .container .btn__works::before {
-  left: 45%;
 }
 
 .btn__works {
