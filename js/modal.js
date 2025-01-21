@@ -52,9 +52,4 @@
     body.classList.remove("no-scroll");
     body.style.overflow = "";
   };
-
-  document.querySelector(".js-open-modal").addEventListener("click", openModal);
-  document
-    .querySelector(".js-close-modal")
-    .addEventListener("click", closeModal);
 })();

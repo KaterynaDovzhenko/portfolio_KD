@@ -162,7 +162,7 @@
     .about__text-card {
       width: 295px;
       margin-bottom: 30px;
-      @include paragraph-mobile;
+      @include main-font;
       @media (min-width: $breakpoint-tablet) {
         width: 450px;
         font-size: $font-size-tablet;
@@ -175,12 +175,13 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      text-align: center;
       @media (min-width: $breakpoint-tablet) {
         flex-direction: row;
         gap: 35px;
       }
       li {
-        @include paragraph-mobile;
+        @include main-font;
         width: 160px;
         span {
           font-size: 40px;
@@ -269,7 +270,7 @@
           height: 40px;
           transform: none;
           top: -8px;
-          left: -130%;
+          left: -165%;
           z-index: -1;
           background-color: $third-color;
           transition: transform 0.7s cubic-bezier(0.44, 0.5, 0.55, 0.56);
@@ -485,6 +486,7 @@
 .ideas__paragraph {
   display: block;
   margin-bottom: 50px;
+  text-align: center;
   @media (min-width: $breakpoint-tablet) {
     margin-bottom: 80px;
   }

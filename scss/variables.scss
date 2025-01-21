@@ -4,6 +4,7 @@ $secondary-color: #bec5d4;
 $third-color: #8896c0;
 $forth-color: #1a1d23;
 $sixth-color: #495168;
+$transparent-color: #656f8269;
 $hover-color: #bdc5d693;
 $dark-color: #131924;
 $footer-color: #bdc5d693;
@@ -12,10 +13,12 @@ $transition-color: color 0.75s ease-out;
 
 $accent-font: "Rufina", sans-serif;
 $main-font: "Lato", sans-serif;
-$font-size-mobile: 14px;
-$font-size-tablet: 16px;
-$font-size-desktop: 18px;
+$font-size-mobile: 12px;
+$font-size-tablet: 14px;
+$font-size-desktop: 16px;
 $section-title-size: 40px;
+$extra-title-size: 30px;
+$extra-title-size-mobile: 25px;
 
 // $cubic-bezier: (0.55, 0, 0.1, 1);
 $breakpoint-desktop: 1024px;
@@ -25,3 +28,5 @@ $breakpoint-mobile: 320px;
 $transition-move: 0.75s ease-in-out;
 $index: calc(1vw + 1vh);
 $gallery-gap: calc($index * 10);
+
+$section-spacing-desktop: 150px;

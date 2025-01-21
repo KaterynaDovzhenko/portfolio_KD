@@ -10,7 +10,7 @@
 }
 
 @mixin section {
-  padding: 150px 0;
+  padding: 120px 0;
   @media (min-width: $breakpoint-desktop) {
     padding: 150px 0;
   }
@@ -29,14 +29,23 @@
   }
 }
 
-@mixin section-title-desktop {
+@mixin section-title {
   font-size: $section-title-size;
   font-family: $accent-font;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   text-align: center;
+  font-weight: 400;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 60px;
+  }
 }
 
-@mixin paragraph-mobile {
-  font-size: $font-size-mobile;
-  text-align: center;
+@mixin extra-title {
+  @include section-title;
+  text-align: left;
+  margin: 0 0 30px 0;
+  font-size: $extra-title-size-mobile;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $extra-title-size;
+  }
 }

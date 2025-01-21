@@ -49,9 +49,13 @@ body {
 }
 
 .section-title {
-  @include section-title-desktop;
+  @include section-title;
+}
+
+.extra-title {
+  @include extra-title;
 }
 
 .paragraph {
-  @include paragraph-mobile;
+  @include main-font;
 }
