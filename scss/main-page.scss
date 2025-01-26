@@ -158,10 +158,12 @@
     justify-content: center;
     z-index: 2;
     opacity: 0;
+    padding: 50px;
     transition: $transition-move;
     .about__text-card {
       width: 295px;
       margin-bottom: 30px;
+      text-align: center;
       @include main-font;
       @media (min-width: $breakpoint-tablet) {
         width: 450px;
@@ -182,7 +184,6 @@
       }
       li {
         @include main-font;
-        width: 160px;
         span {
           font-size: 40px;
         }
@@ -770,4 +771,10 @@
   @media (min-width: $breakpoint-desktop) {
     font-size: 620px;
   }
+}
+
+.glass-effect:hover {
+  background: #bec5d4b8;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(30px);
 }

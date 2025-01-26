@@ -275,11 +275,13 @@ body {
   justify-content: center;
   z-index: 2;
   opacity: 0;
+  padding: 50px;
   transition: 0.75s ease-in-out;
 }
 .about__card .textBox .about__text-card {
   width: 295px;
   margin-bottom: 30px;
+  text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -323,7 +325,6 @@ body {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  width: 160px;
 }
 @media (min-width: 768px) {
   .about__card .textBox .about__textBox-list li {
@@ -952,6 +953,12 @@ body {
   }
 }
 
+.glass-effect:hover {
+  background: rgba(190, 197, 212, 0.7215686275);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
 body {
   background-color: #121212;
   margin: 0;
@@ -1452,8 +1459,18 @@ header .container {
 }
 
 .footer {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   color: rgba(189, 197, 214, 0.5764705882);
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    padding-bottom: 60px;
+  }
 }
 .footer .container {
   display: flex;

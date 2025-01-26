@@ -184,8 +184,14 @@ header {
 ////////// FOOTER
 
 .footer {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   color: $footer-color;
+  @media (min-width: $breakpoint-tablet) {
+    padding-bottom: 40px;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    padding-bottom: 60px;
+  }
   .container {
     display: flex;
     flex-direction: column;
